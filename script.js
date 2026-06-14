@@ -22,7 +22,9 @@ document.getElementById('registrationForm').addEventListener('submit', function(
         city: document.querySelector('input[name="city"]').value,
         bankAccount: document.querySelector('input[name="bankAccount"]').value,
         age: document.querySelector('input[name="age"]').value,
-        amount: document.querySelector('input[name="amount"]').value
+        amount: document.querySelector('input[name="amount"]').value,
+        ministry: document.querySelector('input[name="ministry"]').value,
+        assistanceType: document.querySelector('select[name="assistanceType"]').value
     };
 
     // Validate all fields are filled
