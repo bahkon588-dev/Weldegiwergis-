@@ -19,7 +19,6 @@ document.getElementById('registrationForm').addEventListener('submit', function(
         gender: document.querySelector('select[name="gender"]').value,
         phone: document.querySelector('input[name="phone"]').value,
         nationality: document.querySelector('input[name="nationality"]').value,
-        idNumber: document.querySelector('input[name="idNumber"]').value,
         city: document.querySelector('input[name="city"]').value,
         bankAccount: document.querySelector('input[name="bankAccount"]').value,
         age: document.querySelector('input[name="age"]').value,
