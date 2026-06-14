@@ -1,3 +1,14 @@
+// Navigation functions
+function goToForm() {
+    document.getElementById('coverPage').style.display = 'none';
+    document.getElementById('formPage').style.display = 'flex';
+}
+
+function backToCover() {
+    document.getElementById('formPage').style.display = 'none';
+    document.getElementById('coverPage').style.display = 'flex';
+}
+
 // Form submission handler
 document.getElementById('registrationForm').addEventListener('submit', function(e) {
     e.preventDefault();
