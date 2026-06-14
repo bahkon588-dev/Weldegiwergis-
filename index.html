@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ተመዝገቢያ ቅጽ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cover Page -->
+    <div id="coverPage" class="cover-page">
+        <div class="cover-content">
+            <img src="https://raw.githubusercontent.com/bahkon588-dev/Weldegiwergis-/main/profile.jpg" alt="Profile" class="cover-image">
+            <h1>ወደገነወርግስ</h1>
+            <p>ተመዝገቢያ ስርዓት</p>
+            <button class="cover-button" onclick="goToForm()">ወደ ቅጹ ይሂዱ</button>
+        </div>
+    </div>
+
+    <!-- Form Page -->
+    <div id="formPage" class="form-page" style="display: none;">
+        <div class="container">
+            <div class="form-header">
+                <button class="back-button" onclick="backToCover()">← ተመለስ</button>
+                <h1>ተመዝገቢያ ቅጽ</h1>
+                <p>እባክዎ ሁሉንም መረጃዎን ይሙሉ</p>
+            </div>
+
+            <form id="registrationForm">
+                <div class="card">
+                    <h2>1. ስም</h2>
+                    <input type="text" name="name" required>
+                </div>
+
+                <div class="card">
+                    <h2>2. ወንድ/ሴት</h2>
+                    <select name="gender" required>
+                        <option value="">ይምረጡ</option>
+                        <option>ወንድ</option>
+                        <option>��ት</option>
+                    </select>
+                </div>
+
+                <div class="card">
+                    <h2>3. ስልክ ቁጥር</h2>
+                    <input type="tel" name="phone" required>
+                </div>
+
+                <div class="card">
+                    <h2>4. ዜግነት</h2>
+                    <input type="text" name="nationality" required>
+                </div>
+
+                <div class="card">
+                    <h2>5. የመታወቂያ ቁጥር</h2>
+                    <input type="text" name="idNumber" required>
+                </div>
+
+                <div class="card">
+                    <h2>6. የመኖሪያ ከተማ</h2>
+                    <input type="text" name="city" required>
+                </div>
+
+                <div class="card">
+                    <h2>7. የባንክ አካውንት</h2>
+                    <input type="text" name="bankAccount" required>
+                </div>
+
+                <div class="card">
+                    <h2>8. እድሜ</h2>
+                    <input type="number" name="age" min="18" required>
+                </div>
+
+                <div class="card">
+                    <h2>9. የሚወስዱት የገንዘብ መጠን</h2>
+                    <input type="number" name="amount" required>
+                </div>
+
+                <div class="card">
+                    <button type="submit">አስገባ</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
